@@ -5,10 +5,10 @@ namespace Macpaw;
 use \Exception;
 
 /**
- * Class AbTest
+ * Class AbTestManager
  * @package Macpaw
  */
-class AbTest
+class AbTestManager
 {
     /**
      * @var array
@@ -45,12 +45,13 @@ class AbTest
 
     /**
      * @param User $user
+     *
      * @return mixed
      */
     public function getTestValue(User $user)
     {
         if ($storedValue = $this->retrive($user)) {
-            return current($storedValue);
+            return $storedValue;
         }
 
         $priority = [];
@@ -71,6 +72,7 @@ class AbTest
     /**
      * @param User $user
      * @param string $abCase
+     *
      * @return mixed
      */
     public function store(User $user, string $abCase)
@@ -83,6 +85,7 @@ class AbTest
 
     /**
      * @param User $user
+     *
      * @return mixed
      */
     public function retrive(User $user)
@@ -93,15 +96,42 @@ class AbTest
     }
 
     /**
-     * @param $abValue
+     * @param string $abValue
+     *
      * @return array
+     *
+     * @throws Exception
      */
-    private function parseAbString($abValue): array
+    private function parseAbString(string $abValue): array
     {
         $percents = array_map(function($percentString) {
             return (int) str_replace('%', '', trim($percentString)) / 10;
         }, explode('/',$abValue));
 
+        if (!$this->validatedPersents($percents)) {
+            throw new Exception('Sum of A\B cases percentage must be 100');
+        }
+
         return array_combine(array_slice($this->testList, 0 , count($percents)), $percents);
+    }
+
+    /**
+     * @param array $percents
+     *
+     * @return bool
+     */
+    private function validatedPersents(array $percents): bool
+    {
+        $summ = 0;
+
+        foreach ($percents as $percent) {
+            $summ += $percent;
+        }
+
+        if ($summ === 10) {
+            return true;
+        }
+
+        return false;
     }
 }

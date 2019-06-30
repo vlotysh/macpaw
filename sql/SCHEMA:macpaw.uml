@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>b578ea46-5e1c-43d6-b645-71c94736b538.SCHEMA:macpaw</OriginalElement>
+  <nodes>
+    <node x="393.9953703703704" y="146.0">b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.posts</node>
+    <node x="174.48611111111114" y="190.0">b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.languages</node>
+    <node x="201.0" y="380.0">b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.post_translation</node>
+    <node x="603.0092592592594" y="201.0">b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.tags</node>
+    <node x="0.0" y="391.0">b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.cat_translation</node>
+    <node x="402.0" y="391.0">b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.tag_translation</node>
+    <node x="139.56944444444446" y="0.0">b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.cats</node>
+    <node x="608.2592592592594" y="402.5">b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.post_tags</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.post_tags" target="b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.tags">
+      <point x="39.0" y="-47.5" />
+      <point x="40.75" y="37.0" />
+    </edge>
+    <edge source="b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.post_translation" target="b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.posts">
+      <point x="45.25" y="-70.0" />
+      <point x="336.75" y="360.0" />
+      <point x="434.7453703703704" y="360.0" />
+      <point x="-40.75" y="92.0" />
+    </edge>
+    <edge source="b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.posts" target="b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.cats">
+      <point x="0.0" y="-92.0" />
+      <point x="475.4953703703704" y="121.0" />
+      <point x="270.81944444444446" y="121.0" />
+      <point x="43.75" y="48.0" />
+    </edge>
+    <edge source="b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.tag_translation" target="b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.tags">
+      <point x="45.25" y="-59.0" />
+      <point x="537.75" y="360.0" />
+      <point x="643.7592592592594" y="360.0" />
+      <point x="-40.75" y="37.0" />
+    </edge>
+    <edge source="b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.tag_translation" target="b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.languages">
+      <point x="-45.25" y="-59.0" />
+      <point x="447.25" y="350.0" />
+      <point x="307.81944444444446" y="350.0" />
+      <point x="53.333333333333314" y="48.0" />
+    </edge>
+    <edge source="b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.cat_translation" target="b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.cats">
+      <point x="-45.25" y="-59.0" />
+      <point x="45.25" y="121.0" />
+      <point x="183.31944444444446" y="121.0" />
+      <point x="-43.75" y="48.0" />
+    </edge>
+    <edge source="b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.post_tags" target="b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.posts">
+      <point x="-39.0" y="-47.5" />
+      <point x="647.2592592592594" y="350.0" />
+      <point x="516.2453703703704" y="350.0" />
+      <point x="40.75" y="92.0" />
+    </edge>
+    <edge source="b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.cat_translation" target="b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.languages">
+      <point x="45.25" y="-59.0" />
+      <point x="135.75" y="360.0" />
+      <point x="201.15277777777783" y="360.0" />
+      <point x="-53.333333333333314" y="48.0" />
+    </edge>
+    <edge source="b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.post_translation" target="b578ea46-5e1c-43d6-b645-71c94736b538.TABLE:macpaw.languages">
+      <point x="-45.25" y="-70.0" />
+      <point x="246.25" y="360.0" />
+      <point x="254.48611111111114" y="360.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="383.5" y="260.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+  </Categories>
+</Diagram>
+
