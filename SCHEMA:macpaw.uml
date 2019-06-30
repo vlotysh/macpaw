@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>f489b960-b98e-49d7-87db-8db519d13dbb.SCHEMA:macpaw</OriginalElement>
+  <nodes>
+    <node x="290.4444444444444" y="0.0">f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.cats</node>
+    <node x="200.99999999999997" y="391.0">f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.tag_translation</node>
+    <node x="0.0" y="391.0">f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.cat_translation</node>
+    <node x="402.0" y="380.0">f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.post_translation</node>
+    <node x="191.25" y="190.0">f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.languages</node>
+    <node x="400.59259259259255" y="201.0">f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.tags</node>
+    <node x="592.8425925925926" y="146.0">f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.posts</node>
+    <node x="607.3981481481482" y="402.5">f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.post_tags</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.cat_translation" target="f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.languages">
+      <point x="45.25" y="-59.0" />
+      <point x="135.75" y="360.0" />
+      <point x="217.91666666666669" y="360.0" />
+      <point x="-53.333333333333314" y="48.0" />
+    </edge>
+    <edge source="f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.post_tags" target="f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.posts">
+      <point x="39.0" y="-47.5" />
+      <point x="724.3981481481482" y="360.0" />
+      <point x="715.0925925925926" y="360.0" />
+      <point x="40.75" y="92.0" />
+    </edge>
+    <edge source="f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.tag_translation" target="f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.tags">
+      <point x="45.25" y="-59.0" />
+      <point x="336.75" y="360.0" />
+      <point x="441.34259259259255" y="360.0" />
+      <point x="-40.75" y="37.0" />
+    </edge>
+    <edge source="f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.post_tags" target="f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.tags">
+      <point x="-39.0" y="-47.5" />
+      <point x="646.3981481481482" y="350.0" />
+      <point x="522.8425925925926" y="350.0" />
+      <point x="40.75" y="37.0" />
+    </edge>
+    <edge source="f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.posts" target="f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.cats">
+      <point x="0.0" y="-92.0" />
+      <point x="674.3425925925926" y="121.0" />
+      <point x="421.6944444444444" y="121.0" />
+      <point x="43.75" y="48.0" />
+    </edge>
+    <edge source="f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.post_translation" target="f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.posts">
+      <point x="45.25" y="-70.0" />
+      <point x="537.75" y="360.0" />
+      <point x="633.5925925925926" y="360.0" />
+      <point x="-40.75" y="92.0" />
+    </edge>
+    <edge source="f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.cat_translation" target="f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.cats">
+      <point x="-45.25" y="-59.0" />
+      <point x="45.25" y="121.0" />
+      <point x="334.1944444444444" y="121.0" />
+      <point x="-43.75" y="48.0" />
+    </edge>
+    <edge source="f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.tag_translation" target="f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.languages">
+      <point x="-45.25" y="-59.0" />
+      <point x="246.24999999999997" y="360.0" />
+      <point x="271.25" y="360.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.post_translation" target="f489b960-b98e-49d7-87db-8db519d13dbb.TABLE:macpaw.languages">
+      <point x="-45.25" y="-70.0" />
+      <point x="447.25" y="350.0" />
+      <point x="324.58333333333337" y="350.0" />
+      <point x="53.33333333333337" y="48.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6173469387755102" x="382.0" y="260.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+  </Categories>
+</Diagram>
+
