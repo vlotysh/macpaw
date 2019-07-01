@@ -6,9 +6,9 @@
 
 Потребует запуска
 
-- 'composer isntall'
+- `composer isntall`
 
-- 'php examples/test.php' запуска тестового прогона с тестовыми данными
+- `php examples/test.php` запуска тестового прогона с тестовыми данными
 
-- './vendor/bin/phpunit --bootstrap vendor/autoload.php tests/src/' для запуска юнит тестов.
+- `./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/src/` для запуска юнит тестов.
 Покрыт важный кейс с точностью распределением A\B кейсов
